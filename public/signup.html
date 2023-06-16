@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Send SMS</title>
+</head>
+<body>
+  <h1>Send SMS</h1>
+
+  <form id="smsForm">
+    <label for="phoneNumber">Phone Number:</label>
+    <input type="text" id="phoneNumber" name="phoneNumber" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submit">Send SMS</button>
+  </form>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twilio/3.60.0/twilio.min.js" integrity="sha512-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  <script src="../src/sms.js" type="module/babel"></script>
+</body>
+</html>

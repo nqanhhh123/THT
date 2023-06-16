@@ -1,0 +1,114 @@
+/* button */
+.toggle-button {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.toggle-slider {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.toggle-button.on {
+    background-color: #2196F3;
+}
+
+.toggle-button.on .toggle-slider {
+    transform: translateX(30px);
+}
+
+.toggle-button.off {
+    background-color: #ccc;
+}
+
+/* Login form */
+body {
+    background: #aa4b6b;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.modal-body {
+    padding: 0px;
+}
+
+
+
+.btn-close {
+    position: absolute;
+    right: 0;
+    padding: 1em;
+}
+
+.modal-content {
+    width: 80%;
+    margin: 0px auto;
+
+}
+
+.modal-body {
+    padding: 0px;
+}
+
+h1 {
+    font-size: 2.3em;
+    font-weight: bold;
+}
+
+.myform {
+    padding: 2em;
+    max-width: 100%;
+    color: #fff;
+    box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+
+    @media(max-width: 576px) {
+        max-width: 90%;
+        margin: 0px auto;
+    }
+}
+
+.form-control {
+    background-color: inherit;
+    color: #fff;
+    padding-left: 0px;
+    border: 0px;
+    border-bottom: 1px solid #fff;
+}
+
+.myform .btn {
+    width: 100%;
+    font-weight: 800;
+    background-color: #fff;
+    border-radius: 0;
+    padding: 0.5rem 0;
+}
+
+p {
+    text-align: center;
+    padding-top: 2em;
+}
+
+p a {
+    color: #e1e1e1;
+    text-decoration: none;
+}
+
+p a:hover {
+    color: #fff
+}

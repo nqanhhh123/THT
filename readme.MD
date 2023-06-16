@@ -1,0 +1,61 @@
+- SPA/MPA
+- JSX: using babel to compile.
+- Thay vì dùng thẻ div wrap một đống thành phần, có thể sử dụng React.Fragment tag
+- Thành phần khi tạo một element trong React:
+
+<!-- /// ('tag', props, children); -->
+
+      + tag: ví dụ h1, h2, div, p,...
+      + props: các thuộc tính như style, className, id, key, value, ....
+      + children: thành phần con, ví dụ tạo ra thẻ p nội dung là "hello" thì children là hello.
+      Lưu ý: children có thể có nhiều element.
+      * Ví dụ: Tạo thẻ ul gồm nhiều thẻ li, khi đó children có 3 trở lên sẽ thành array.
+
+- Đói với React 18, cách tạo element sẽ khác
+
+const root = React.createRoot(document.getElementById('root));
+root.render('your element');
+
+      *Lưu ýL trong trường hợp render ra một array, thì sẽ dùng phương thức map để tạo ra một array MỚI(NÊN
+      KHÔNG DÙNG FOREACH);
+
+<!-- // 27/3/2023 -->
+
+- React element type: function(chủ yếu)/ class / string => Hook
+
+- Function: Tạo function, xong dùng như thẻ html. Ví dụ:
+
+function Header(){
+return <div className="Header">Header</div>
+}
+
+    const app = (
+        <div>
+                <Header></Header>
+                <Header />
+                <div className="Body">Body</div>
+                <div className="Footer">Footer</div>
+            </div>
+        )
+
+        ReactDOM.createRoot(document.getElementById('root')).render(app);
+
+- Lưu ý: Nếu thẻ mà ko có children có thể viết <function /> (nhớ cách)
+
+- class: tương tự function
+  class Content extends React.Component{
+  render(){
+  return <div className="Body">Body</div>
+  }
+  }
+  // functi
+  const app = (
+  <div>
+  <Header></Header>
+  <Header />
+  <Content />
+  <div className="Footer">Footer</div>
+  </div>
+  )
+
+          ReactDOM.createRoot(document.getElementById('root')).render(app);
