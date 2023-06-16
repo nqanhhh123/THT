@@ -1,10 +1,14 @@
 const path = require("path");
 
 module.exports = {
-  entry: "./src/index.js", // Dẫn tới file index.js ta đã tạo
+  entry: {
+    index: "./src/index.js",    
+    config: "./src/config.js",    
+    button: "./src/button.js",      
+  }, // Dẫn tới file index.js ta đã tạo
   output: {
     path: path.join(__dirname, "/build"), // Thư mục chứa file được build ra
-    filename: "bundle.js", // Tên file được build ra
+    filename: "[name].js", // Tên file được build ra
   },
   module: {
     rules: [

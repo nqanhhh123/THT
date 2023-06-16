@@ -1,5 +1,5 @@
 // main.js
-import Twilio from "https://cdnjs.cloudflare.com/ajax/libs/twilio/3.60.0/twilio.min.js";
+import Twilio from "twilio";
 
 const accountSid = "AC0d760b2a64d34a20ebf5145964635470";
 const authToken = "996c59aca0a8e0224e88648defd4b44e";

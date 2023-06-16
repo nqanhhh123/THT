@@ -1,5 +1,5 @@
 import { data, docRef } from "../src/config.js";
-import { updateDoc } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js";
+import { updateDoc } from "firebase/firestore";
 
 let autoButton = document.getElementById("auto");
 let manualButton = document.getElementById("manual");
